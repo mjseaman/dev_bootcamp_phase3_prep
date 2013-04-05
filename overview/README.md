@@ -7,7 +7,7 @@ Table of Contents:
 -----------
 
 * <a href="#introduction">Introduction (READ ME first)</a>
-* <a href="#how_to-use-this-guide">How to use</a>
+* <a href="#how-to-use-this-guide">How to use</a>
 * <a href="#rspec--testing">Rspec & Testing</a>
 * <a href="#models--migrations">Models & Migrations</a>
 * <a href="#controllers">Controllers</a>
