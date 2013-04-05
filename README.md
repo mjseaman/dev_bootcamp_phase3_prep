@@ -9,14 +9,14 @@ There are two sections to this prep:
 - [Overview](https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview)
 - [Exercises](https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises)
 
-The overview briefly covers each of the main topics of concern in rails. The exercises give you a chance to get your hands dirty and see these topics in action.
+The overview briefly covers each of the main topics of concern in rails. The exercises give you a chance to get your hands dirty and see the topics in action.
 
 The overview is to be read first. Any deviation from the path will end in <a  href="http://fc00.deviantart.net/fs50/f/2009/293/a/c/Funny_Death_by_airesnf.jpg" target="_blank">death</a>....
 
 My Motivation
 -------------
 
-After experiencing the seemingly mind shattering shift from Sinatra to Rails, I have decided to create a prep sheet for future [Dev Bootcamp](http://devbootcamp.com/) boots in hopes of their escaping experiencing my, and the many before me's, same frustrating fate. 
+After experiencing the seemingly mind shattering shift from Sinatra to Rails, I have decided to create a prep sheet for future [Dev Bootcamp](http://devbootcamp.com/) boots. The hope is that they will  escape my, and the many before me's, same frustrating fate (wondering wth is going on).  :)
 
 
 Contribution is Encouraged
