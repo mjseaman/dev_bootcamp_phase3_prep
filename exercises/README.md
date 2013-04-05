@@ -17,6 +17,7 @@ Table of Contents
 * <a href="#forms">Forms</a>
 * <a href="#links">Links</a>
 * <a href="#ajax">Ajax</a>
+* <a href="#authentication">Authentication</a>
 
 <h2 id="introduction">Introduction</h2>
 We, the prior boots, have done our best to create exercises for you, current boot, to complete in hopes you don't feel completely lost when you meet Rails in Week 1 of Phase 3. These exercises are a work in progress and your feedback is greatly appreciated and needed for us to continue improving. If you find an exercise needing improvement please fork the repo and update accordingly, submitting a pull request to notify us. We will add your improvements to the prep as soon as possible.
@@ -35,3 +36,4 @@ You're a boot, this section is not necessary. :P
 <h2 id="forms">Forms</h2>
 <h2 id="links">Links</h2>
 <h2 id="ajax">AJAX</h2>
+<h2 id="authentication">Authentication</h2>
