@@ -24,7 +24,7 @@ We, the prior boots, have done our best to create exercises for you, current boo
 Also note there may not be exercises for all topics. Again, please help by creating an exercise for us if you can. :) 
  
 <h2 id="how-to-do-these-exercises">How to do these exercises</h2>
-You are a boot, this section is not necessary. :P
+You're a boot, this section is not necessary. :P
 
 <h2 id="rspec--testing">Rspec & Testing</h2>
 <h2 id="models--migrations">Models & Migrations</h2>
