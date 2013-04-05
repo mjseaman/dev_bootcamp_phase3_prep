@@ -28,11 +28,11 @@ As you go through you may find yourself confused. This is ok. Rails is confusing
 So please be kind with us and please give back by forking this repo and helping us to improve the experience for future boots.
 
 <h2 id="#things-you-should-know-to-succeed-in-phase-3">Things you should know to succeed in phase 3</h2>
-- Phase 3 is unlike any other phase. 
-- It is less structured. 
-- You should expect to struggle. A lot.
-- rails generate is not to be used for anything but your models 
-- rails generate is not to be used for anything but your models (yes, you need to hear this twice)
+- Phase 3 is unlike any other phase
+- It is less structured
+- You should expect to struggle, A lot
+- Rails generate is not to be used for anything but your models 
+- Rails generate is not to be used for anything but your models (yes, you need to hear this twice)
 - Hartl is a useful guide, but please God do not take it for bible
 - Hartl is a useful guide, but please God do not take it for bible (yes, you ALSO need to hear this twice)
 - Go slow
