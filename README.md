@@ -22,7 +22,7 @@ After experiencing the seemingly mind shattering shift from Sinatra to Rails, I 
 Contribution is Encouraged
 -------------
 
-For those who would be so kind to contribute to this project please fork, add changes, and do a pull request. The more input the merrier. Let's help give back to DBC and improve the experience and success of those coming after us.
+For those who would be so kind to contribute to this project, please fork, add changes, and do a pull request. The more input the merrier. Let's help give back to DBC and improve the experience and success of those coming after us.
 
 \#SlugLife
 
