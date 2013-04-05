@@ -19,6 +19,7 @@ Table of Contents:
 * <a href="#links">Links</a>
 * <a href="#ajax">Ajax</a>
 * <a href="authentication">Authentication</a>
+* <a href="environments">Environments</a>
 
 <h2 id="introduction">Introduction</h2>
 This guide covers a wide spectrum of IMPORTANT topics in Rails. We do not cover any one topic too deeply. On the contrary, our goal is to introduce you to Rails conventions, not make you an expert in them. 
@@ -58,6 +59,19 @@ The prep works like this:
 Enough mumbo jumbo, let's get to learning!
 
 <h2 id="rspec--testing">Rspec & Testing</h2>
+###Your tool bag
+<a href="https://github.com/thoughtbot/factory_girl_rails" target="_blank">Factory Girl</a> - *insert description*
+
+<a href="https://github.com/jnicklas/capybara" target="_blank">Capybara</a> - *insert description*
+
+<a href="https://github.com/bmabey/database_cleaner" target="_blank">DatabaseCleaner</a> - *insert description*
+
+<a href="https://github.com/johnbintz/guard-rails" target="_blank">Guard</a> - *insert description*
+
+<a href="https://github.com/sporkrb/spork" target="_blank">Spork</a> - *insert description*
+
+<a href="https://github.com/maltize/sublime-text-2-ruby-tests" target="_blank">RubyTest</a> - *insert description*
+
 <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#rspec--testing" target="_blank">Rspec & Testing exercise</a> 
 <h2 id="models--migrations">Models & Migrations</h2>
 <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#models--migrations" target="_blank">Models & Migrations exercise</a>
@@ -77,3 +91,7 @@ Enough mumbo jumbo, let's get to learning!
 <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#ajax" target="_blank">AJAX exercise</a>
 <h2 id="authentication">Authentication</h2>
 <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#authentication" target="_blank">Authentication exercise</a>
+<h2 id="environments">Environments</h2>
+- Environments (Development, Test, Production)
+- Default environment in Rails is Development. 
+- Opening development console: ```$ rails console``` Test console: ```$ rails console test```
