@@ -33,7 +33,7 @@ So please be kind with us and please give back by forking this repo and helping 
 - You should expect to struggle, A lot
 - Rails generate is not to be used for anything but your models 
 - Rails generate is not to be used for anything but your models (yes, you need to hear this twice)
-- Hartl is a useful guide, but please God do not take it for bible
+- <a href="http://ruby.railstutorial.org/ruby-on-rails-tutorial-book" target="_blank">Hartl</a> is a useful guide, but please God do not take it for bible
 - Hartl is a useful guide, but please God do not take it for bible (yes, you ALSO need to hear this twice)
 - Go slow
 - Learn your tools (Gems) and learn them well
