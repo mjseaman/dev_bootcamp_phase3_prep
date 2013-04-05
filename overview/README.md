@@ -44,7 +44,7 @@ Enough mumbo jumbo, let's get to learning!
 <h2 id="controllers">Controllers</h2>
 <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#controllers" target="_blank">Controllers exercise</a>
 <h2 id="views">Views</h2>
-<a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#views" target="_blank"><Views exercise/a>
+<a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#views" target="_blank">Views exercise</a>
 <h2 id="helpers">Helpers</h2>
 <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#helpers" target="_blank">Helpers exercise</a>
 <h2 id="partials">Partials</h2>
