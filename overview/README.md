@@ -95,3 +95,4 @@ Enough mumbo jumbo, let's get to learning!
 - Environments (Development, Test, Production)
 - Default environment in Rails is Development. 
 - Opening development console: ```$ rails console``` Test console: ```$ rails console test```
+- Running tests: *insert description*
