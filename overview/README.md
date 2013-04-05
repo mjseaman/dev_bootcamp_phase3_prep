@@ -7,6 +7,7 @@ Table of Contents:
 -----------
 
 * <a href="#introduction">Introduction (READ ME first)</a>
+* <a href="#things-you-should-know-to-succeed-in-phase-3">Things you should know to succeed in phase 3</a>
 * <a href="#how-to-use-this-guide">How to use</a>
 * <a href="#rspec--testing">Rspec & Testing</a>
 * <a href="#models--migrations">Models & Migrations</a>
@@ -25,6 +26,25 @@ This guide covers a wide spectrum of IMPORTANT topics in Rails. We do not cover 
 As you go through you may find yourself confused. This is ok. Rails is confusing at first. You may also find yourself angry (as I did), wondering why the hell we learned Sinatra just to switch to rails. Trust in knowing there is a good reason and your hatred for Rails will soon subside (NOTE: everything you learned in Sinatra is used in Rails, the wording is just a little different. DON'T FORGET THIS). Also trust in knowing this tutorial was created by boots, for boots and is not perfect. It is however pretty bad ass and is infinitely more than we (the Sea Lions and Banana Slugs) had as prep for our final chapter at DBC. 
 
 So please be kind with us and please give back by forking this repo and helping us to improve the experience for future boots.
+
+<h2 id="#things-you-should-know-to-succeed-in-phase-3">Things you should know to succeed in phase 3</h2>
+- Phase 3 is unlike any other phase. 
+- It is less structured. 
+- You should expect to struggle. A lot.
+- rails generate is not to be used for anything but your models 
+- rails generate is not to be used for anything but your models (yes, you need to hear this twice)
+- Hartl is a useful guide, but please God do not take it for bible
+- Hartl is a useful guide, but please God do not take it for bible (yes, you ALSO need to hear this twice)
+- Go slow
+- Learn your tools (Gems) and learn them well
+- Struggle with TDD even though you don't want to write it
+- TDD is your friend, do your best to love it and learn it's tools (Spork, Guard, TestRuby, FactoryGirl, Capybara, Rspec)
+- Things in Rails are not that different than what you learned in Sinatra
+- Make sure you truly believe the above bullet point, if you don't, ask someone to explain it to you
+- This is just the beginning, not the end
+- Learn to enjoy the struggle because your life as a programmer is one BIG effing struggle
+- And finally, Rails is your friend, if you're not having fun you're doing it wrong! :)
+(If you are not having fun and you are actually doing it right, ask Jeffrey for some slap therapy)
 
 <h2 id="how_to-use-this-guide">How to use this guide</h2>
 The prep works like this: 
