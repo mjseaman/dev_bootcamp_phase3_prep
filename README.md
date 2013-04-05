@@ -11,7 +11,7 @@ There are two sections to this prep:
 
 The overview briefly covers each of the main topics of concern in rails. The exercises give you a chance to get your hands dirty and see these topics in action.
 
-The overview is to be read first. Any deviation from the path will end in <a  href"http://static.themetapicture.com/media/funny-Death-Grim-Reaper-street.jpg" target="_blank">death</a>....
+The overview is to be read first. Any deviation from the path will end in <a  href="http://static.themetapicture.com/media/funny-Death-Grim-Reaper-street.jpg" target="_blank">death</a>....
 
 My Motivation
 -------------
