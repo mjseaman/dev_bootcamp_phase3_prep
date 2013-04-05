@@ -6,10 +6,10 @@ Onboarding for Rails. The below topics will help you to make a smooth transition
 Table of Contents:
 -----------
 
-* <a href="#intro">Introduction (READ ME first)</a>
-* <a href="#how_to">How to use</a>
-* <a href="#rspec">Rspec & Testing</a>
-* <a href="#models">Models & Migrations</a>
+* <a href="#introduction">Introduction (READ ME first)</a>
+* <a href="#how_to-use-this-guide">How to use</a>
+* <a href="#rspec--testing">Rspec & Testing</a>
+* <a href="#models--migrations">Models & Migrations</a>
 * <a href="#controllers">Controllers</a>
 * <a href="#views">Views</a>
 * <a href="#helpers">Helpers</a>
@@ -18,14 +18,14 @@ Table of Contents:
 * <a href="#links">Links</a>
 * <a href="#ajax">Ajax</a>
 
-<h2 id="intro">Introduction</h2>
+<h2 id="introduction">Introduction</h2>
 This guide covers a wide spectrum of IMPORTANT topics in Rails. We do not cover any one topic too deeply. On the contrary, our goal is to introduce you to Rails conventions, not make you an expert in them. 
 
 As you go through you may find yourself confused. This is ok. Rails is confusing at first. You may also find yourself angry (as I did), wondering why the hell we learned Sinatra just to switch to rails. Trust in knowing there is a good reason and your hatred for Rails will soon subside (NOTE: everything you learned in Sinatra is used in Rails, the wording is just a little different. DON'T FORGET THIS). Also trust in knowing this tutorial was created by boots, for boots and is not perfect. It is however pretty bad ass and is infinitely more than we (the Sea Lions and Banana Slugs) had as prep for our final chapter at DBC. 
 
 So please be kind with us and please give back by forking this repo and helping us to improve the experience for future boots.
 
-<h2 id="how_to">How to use this guide</h2>
+<h2 id="how_to-use-this-guide">How to use this guide</h2>
 The prep works like this: 
 - We give you a topic and an example of how the topic works in rails
 - If we are lucky we can show you how it worked in Sinatra
@@ -36,8 +36,8 @@ The prep works like this:
 
 Enough mumbo jumbo, let's get to learning!
 
-<h2 id="rspec">Rspec & Testing</h2>
-<h2 id="models">Models & Migrations</h2>
+<h2 id="rspec--testing">Rspec & Testing</h2>
+<h2 id="models--migrations">Models & Migrations</h2>
 <h2 id="controllers">Controllers</h2>
 <h2 id="views">Views</h2>
 <h2 id="helpers">Helpers</h2>
