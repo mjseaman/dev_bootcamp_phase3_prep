@@ -1,7 +1,7 @@
 Exercises
 ===============
 
-If you haven't done so yet, read the [overview page](https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview). Doing the exercises before doing so leads to death...
+If you haven't done so yet, read the [overview page](https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview). Doing the exercises before reading the overview surely leads to <a href="http://omgface.com/evil/evil%20baby7.jpg" target="_blank">death</a>...
 
 Table of Contents
 ------------------
@@ -35,7 +35,3 @@ You are a boot, this section is not necessary. :P
 <h2 id="forms">Forms</h2>
 <h2 id="links">Links</h2>
 <h2 id="ajax">AJAX</h2>
-<h2 id=""></h2>
-<h2 id=""></h2>
-<h2 id=""></h2>
-<h2 id=""></h2>
