@@ -5,9 +5,13 @@ The main goal of this document is to introduce Phase 3 students to Rails, point 
 
 The Format
 -------------
-There are two sections to this prep: the overview and the exercises. 
+There are two sections to this prep: 
+1. [Overview](https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview)
+1. [Exercises](https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises)
 
-The overview briefly covers each of the main topics of concern in rails. We then offer exercises for each topic to help you to better understand. 
+The overview briefly covers each of the main topics of concern in rails. The exercises give you a chance to see these topics in action.
+
+The overview is to be read first. Any deviation from the path will end in <a  href"http://static.themetapicture.com/media/funny-Death-Grim-Reaper-street.jpg" target="_blank">death</a>....
 
 My Motivation
 -------------
