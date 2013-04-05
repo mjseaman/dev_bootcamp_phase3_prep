@@ -16,7 +16,7 @@ The overview is to be read first. Any deviation from the path will end in <a  hr
 My Motivation
 -------------
 
-After experiencing the seemingly mind shattering shift from Sinatra to Rails, I have decided to create a prep sheet for future [Dev Bootcamp](http://devbootcamp.com/) boots. The hope is that they will  escape my, and the many before me's, same frustrating fate (wondering wth is going on).  :)
+After experiencing the seemingly mind shattering shift from Sinatra to Rails, I have decided to create a prep sheet for future [Dev Bootcamp](http://devbootcamp.com/) boots. The hope is that they will  escape my, and the many boots before me's, same frustrating fate (wondering wth is going on).
 
 
 Contribution is Encouraged
