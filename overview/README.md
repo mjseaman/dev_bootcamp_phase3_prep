@@ -32,7 +32,7 @@ The prep works like this:
 - If you are lucky you will understand the difference
 - If you don't understand the difference we do our best to offer an exercise that helps you understand
 - If you don't understand the exercise, fear not, you still have more prep than we did :P
-- No really, if you don't understand it, don't freak out, at least you have been introduced to it, step 1 in the learning process, <a href="http://socrates.devbootcamp.com/labs/curriculum/dbc-s-principles/designing-with-empathy#toc_0" target="_blank">recognition</a> (click that link)... (seriously, click it). 
+- No really, if you don't understand it, don't freak out, at least you have been introduced to it - step 1 in the learning process, <a href="http://socrates.devbootcamp.com/labs/curriculum/dbc-s-principles/designing-with-empathy#toc_0" target="_blank">recognition</a> (click that link)... (seriously, click it). 
 
 Enough mumbo jumbo, let's get to learning!
 
