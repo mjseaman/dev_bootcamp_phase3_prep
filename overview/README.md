@@ -67,7 +67,8 @@ That said, here's a list of gems I used to run my testing in rails. We'll call i
 
 <a href="https://github.com/jnicklas/capybara" target="_blank">Capybara</a> - allows you to click links, sign in, fill out forms, etc. 
 
-**Shoulda-Matchers**
+<a href="https://github.com/thoughtbot/shoulda-matchers">Shoulda-Matchers**</a> - allows you to run tests on your models quite easily. Created by ThoughtBot
+
 <a href="https://github.com/bmabey/database_cleaner" target="_blank">DatabaseCleaner</a> - allows you to run tests in the development and test environments. Watch this <a href="http://railscasts.com/episodes/257-request-specs-and-capybara">Railscast</a>
 
 <a href="https://github.com/johnbintz/guard-rails" target="_blank">Guard</a> - auto runs your tests on save. 
