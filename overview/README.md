@@ -1,7 +1,7 @@
 Overview
 ==============
 
-Onboarding for Rails. The below topics will help you to make a smooth transition from Sinatra to Rails.
+Onboarding for Rails. The below topics will help you to make a smooth transition from Sinatra to Rails. Skin through them to familiarize yourself. If you have time check out some of the exercises, but don't kill yourself. 
 
 Table of Contents:
 -----------
@@ -61,7 +61,7 @@ Enough mumbo jumbo, let's get to learning!
 <h2 id="rspec--testing">Rspec & Testing</h2>
 Don't stress too much on Rspec and Testing right now. There are (or were) 3 great challenges in week 1 that get you up to speed. Also realize tests can be a major road block to your learning in Rails. I would recommend you get comfortable with rails before you worry about TDD.
 
-That said, here is a list of gems I used to run my testing in rails. We'll call it the TDD toolbelt
+That said, here's a list of gems I used to run my testing in rails. We'll call it the TDD toolbelt
 ###TDD toolbelt
 <a href="https://github.com/thoughtbot/factory_girl_rails" target="_blank">Factory Girl</a> - allows you to create objects for your tests, hence the name "Factory" girl. 
 
@@ -87,11 +87,13 @@ Creating a model in our sinatra skeleton went like this:
 ```
 $ rake generate:model NAME=MyModel
 ```
-This was actually code Jesse wrote for us, in Sinatra this rake task does not exist. In rails however there does exist ```$ rake generate``` and it goes like this:
+This was actually code Jesse wrote for us. In Sinatra this rake task does not exist. In rails however there does exist ```$ rake generate``` and it goes like this:
 ```
 $ rails generate model MyModel
 ```
-This will create a model in assets/models named my_model.rb and a migration name create_my_models.rb. Very useful. Probably the most exiting thing about ```$ rails generate``` the ability to pass table attributes from command line. Here's an example:
+This will create a model in assets/models named "my_model.rb" and a migration named "create_my_models.rb". Very useful. 
+
+Probably the most exiting thing about ```$ rails generate``` is the ability to pass table attributes from command line. Here's an example:
 ```
 rails generate model MyModel name:string email:string password:string
 ```
@@ -109,7 +111,9 @@ class CreateMyModels < ActiveRecord::Migration
   end
 end
 ```
-#Railsmagic
+That deserves a \#Railsmagic! 
+
+That's about the most I think you should know about models and migrations in Rails. Everything we did in Sinatra still applies with associations and validations. These are part of ActiveRecord and don't change from one "framework" to the other. 
 
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#models--migrations" target="_blank">Models & Migrations exercise</a>
 <h2 id="controllers">Controllers</h2>
