@@ -117,33 +117,33 @@ That's about the most I think you should know about models and migrations in Rai
 
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#models--migrations" target="_blank">Models & Migrations exercise</a>
 <h2 id="controllers">Controllers & Routes</h2>
-Controllers in rails are a bit different than in Sinatra. The main difference is the syntax of the routes. In rails we have a "routes.rb" file. This file is incredibly powerful and important in rails. <a href="https://github.com/keithtom">Keith Tom</a> does a good job of explaining routes <a href="https://gist.github.com/keithtom/3f311c392326bc659b54#readme">here</a>. Go through and read his section on routing. Again, this is important. 
+Controllers in rails are a bit different than in Sinatra. The main difference is the syntax of the routes. In rails we have a "routes.rb" file. This file is incredibly powerful and important in rails. It's main purpose in life is to serve as an index for rails to know where to find each "route" or url that an user may visit.  Think of it as an old school <a href="http://en.wikipedia.org/wiki/Switchboard_operator">switchboard (phone) operator</a>. Calls come in and the operator connects the call to the proper "jack" or line. **more code needs to be written here**<a href="https://github.com/keithtom">Keith Tom</a> does a good job of explaining routes <a href="https://gist.github.com/keithtom/3f311c392326bc659b54#readme">here</a>. Go through and read his section on routing. Again, this is important. 
 
 Now that you've read Keith's post my job is done... That said, I will give a quick example of the difference in controllers & routes for those who are interested. 
 
 In Sinatra our controller looks like this:
 ```ruby
 get '/' do
-@user = User.new
-erb :index
+  @user = User.new
+  erb :index
 end
 
 get '/users/:id' do
-@user = User.find(params[:id])
-erb :profile
+  @user = User.find(params[:id])
+  erb :profile
 end
 ```
 In rails our controller looks like this:
 ```ruby
 class UsersController < ActiveRecord::Base
 
-def index
-@user = User.new
-end
+  def index
+    @user = User.new
+  end
 
-def show
-@user = User.find(params[:id])
-end
+  def show
+    @user = User.find(params[:id])
+  end
 end
 ```
 What in the world!! Right? Maybe not, but this is a little confusing when you don't know how rails routing works so, for the third time, go read <a href="https://gist.github.com/keithtom/3f311c392326bc659b54#readme">Keith's post</a>. And if you still don't get it, check out the exercise below.
