@@ -158,6 +158,47 @@ If you'd like to learn more check out the <a href="https://github.com/rguerretta
 <h2 id="partials">Partials</h2>
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#partials" target="_blank">Partials exercise</a>
 <h2 id="forms">Forms</h2>
+Forms in Rails are \#awesome. You may not think so at first, but they are. What makes them so great you wonder? They are powerful little buggers that allow you to write less code and offer more functionality than in Sinatra. Here's what I mean:
+
+In sinatra our forms were built by hand if you will, like so:
+```html
+<form action="/users" method="post">
+<input type="text" name="user[username]" placeholder="Username">
+<input type="email" name="user[email]" placeholder="email">
+<input type="password" name="user[password]" placeholder="Password">
+<input type="submit" value="Sign up!">
+```
+Seems all good, right? But to be honest I don't want to keep writing that out over and over. In steps the rails <a href="http://guides.rubyonrails.org/form_helpers.html#binding-a-form-to-an-object">form_for</a> helper. What does form_for do? It allows us to pass an object into the form and will create our ```method```, ```action```, and ```inputs``` for us based on that objects attributes and Rails routes... Confusing, indeed. Check out this example. It may make more sense.
+
+Rails form_for in action:
+```erb
+<%= form_for @user do |f|  %>
+<%= f.text_field :username, placeholder: "Username" %>
+<%= f.email_field :email, placeholder: "Email" %>
+<%= f.password_field :password, placeholder: "Password" %>
+<%= f.submit "Sign up!" %>
+<% end %>
+```
+Which translates to:
+```html
+<form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post" >
+  <div style="margin:0;padding:0;display:inline">
+    <input name="utf8" type="hidden" value="✓">
+    <input name="authenticity_token" type="hidden" value="fGUew7MnGx+48gel2vjxNhqdHVUKp7q7rIMCIk+ehOw=">
+  </div>
+  <input id="user_username" name="user[username]" placeholder="Username" size="30" type="text" />
+  <input id="user_email" name="user[email]" placeholder="Email" size="30" type="email" />
+  <input id="user_password" name="user[password]" placeholder="Password" size="30" type="password" />
+  <input name="commit" type="submit" value="Sign up!" />
+</form>
+```
+
+The syntax is a bit different, but the above html has the exact same outcome as the Sinatra form. It may not feel so, but check the Sinatra form again. Compare it to the rails form. The same main parameters are there ```action```, ```method```, ```input```, ```names```, ```types```, ```placeholders```, and a ```submit button```. Yes, the rails form has extra parameters but don't get confused. The truth is, both are going to send params[:user] to the "action" route as a "post"... 
+
+Also, don't get bogged down in the details of the ```<div>```. it's part of rails security and prevents CSRF (Cross Site Request Forgery). If you want to learn more, read <a href="http://stackoverflow.com/questions/941594/understand-rails-authenticity-token#answers-header">this</a>. 
+
+That's it for an intro. Rails forms are super powerful so start using them and keep using them. And if you're interested in learning more check out the exercise or, if you're feeling really frisky, start learning about <a href="http://apidock.com/rails/ActionView/Helpers/FormHelper/fields_for">fields_for and nested forms</a>...
+
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#forms" target="_blank">Forms exercise</a>
 <h2 id="links">Links</h2>
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#links" target="_blank">Links exercise</a>
