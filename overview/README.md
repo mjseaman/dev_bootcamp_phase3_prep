@@ -1,7 +1,7 @@
 Overview
 ==============
 
-Onboarding for Rails. The below topics will help you to make a smooth transition from Sinatra to Rails. Skin through them to familiarize yourself. If you have time check out some of the exercises, but don't kill yourself. 
+Onboarding for Rails. The below topics will help you make a smooth transition from Sinatra to Rails. Skin through them to familiarize yourself. If you have time check out some of the exercises, but don't kill yourself. 
 
 Table of Contents:
 -----------
@@ -23,9 +23,9 @@ Table of Contents:
 <h2 id="introduction">Introduction</h2>
 This guide covers a wide spectrum of IMPORTANT topics in Rails. It does not cover any one topic too deeply. On the contrary, the goal is to introduce you to Rails conventions, not make you an expert in them. 
 
-As you go through you may find yourself confused. This is ok. Rails is confusing at first. You may also find yourself angry (as I did), wondering why the hell we learned Sinatra just to switch to rails. Trust in knowing there is a good reason and your hatred for Rails will soon subside (NOTE: everything you learned in Sinatra is used in Rails, the wording is just a little different. Don't forget this.). Also trust in knowing this tutorial was created by boots, for boots and is not perfect. It is however pretty bad ass and is infinitely more than we (the Sea Lions and Banana Slugs) had as prep for our final chapter at DBC. 
+As you go through you may find yourself confused. This is ok. Rails is confusing at first. You may also find yourself angry (as I did), wondering why the hell we learned Sinatra just to switch to rails. Trust in knowing there is a good reason and your hatred for Rails will soon subside (NOTE: everything you learned in Sinatra is used in Rails, the wording is just a little different. Don't forget this.). Also trust in knowing this tutorial was created a fellow boot with only 7 weeks of programming under his belt. It's not perfect. It is however pretty bad ass and is infinitely more than the Sea Lions and my cohort, the Banana Slugs, had as prep for our final chapter at DBC. 
 
-So please be kind with us and please give back by forking this repo and helping us to improve the experience for future boots.
+So please be kind and please feel free to give back by forking this repo and adding your own thoughts or edits to improve the experience for future boots.
 
 <h2 id="#things-you-should-know-to-succeed-in-phase-3">Things you should know to succeed in phase 3</h2>
 - Phase 3 is unlike any other phase
@@ -47,11 +47,11 @@ So please be kind with us and please give back by forking this repo and helping 
 
 <h2 id="how_to-use-this-guide">How to use this guide</h2>
 The prep works like this: 
-- We give you a topic in rails
-- If we are lucky we can show you how it worked in Sinatra
+- I give you a topic in rails
+- I try to show you how it worked in Sinatra
 - If you are lucky you'll understand the difference
-- If you don't understand we do our best to offer an exercise to help you understand
-- If you still don't understand, fear not, you still have more prep than we did :P
+- If you don't understand I do my best to offer an exercise to help you understand
+- If you still don't understand, fear not, you still have more prep than my cohort did :P
 
 No really, if you don't understand, don't freak out, at least you've been introduced to it. This is step 1 in the learning process and referred to as <a href="http://socrates.devbootcamp.com/labs/curriculum/dbc-s-principles/designing-with-empathy#toc_0" target="_blank">recognition</a>...  (click that link)... (seriously, click it). 
 
