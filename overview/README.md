@@ -18,7 +18,6 @@ Table of Contents:
 * <a href="#forms">Forms</a>
 * <a href="#links">Links</a>
 * <a href="#ajax">Ajax</a>
-* <a href="authentication">Authentication</a>
 * <a href="environments">Environments</a>
 
 <h2 id="introduction">Introduction</h2>
@@ -152,6 +151,13 @@ What in the world!! Right? Maybe not, but this is a little confusing when you do
    
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#controllers" target="_blank">Controllers exercise</a>
 <h2 id="views">Views</h2>
+Views in rails are similar to those in Sinatra. There are a few main differences:
+- They end in ```html.erb``` instead of ```html```
+- They are organized nicely by model name. I.e. Your users views are in ```app/views/users```
+- They are named after the route they represent. That's to say if you have a ```users/new``` route, the view file for this route would be ```apps/views/users/new.html.erb```. If you are still confused about routes because you didn't read Keith's post, please read it... If you read Keith's post and are still confused then rest assured you will understand soon. :)
+
+That's really it for views.
+
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#views" target="_blank">Views exercise</a>
 <h2 id="helpers">Helpers</h2>
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#helpers" target="_blank">Helpers exercise</a>
@@ -204,9 +210,15 @@ If you'd like to learn more check out the <a href="https://github.com/rguerretta
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#links" target="_blank">Links exercise</a>
 <h2 id="ajax">AJAX</h2>
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#ajax" target="_blank">AJAX exercise</a>
-<h2 id="authentication">Authentication</h2>
-If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#authentication" target="_blank">Authentication exercise</a>
 <h2 id="environments">Environments</h2>
-There are 3 envirnonment we work with in Rails: Development, Test, & Production. There a few important differences to look out for. Here they are:
+Don't worry too much about environments. There are 3 of course: Development, Test, & Production. All you might want to know for now is to run your rspec tests you must type in 
+```
+$ rake db:test:prepare
+```
+after you run your 
 
-- *insert differences or examples*
+```
+$ rake db:migrate
+```
+
+That's all folks. The final advice I will share is that the first week of Rails can (will) be treacherous. When it is, remember back to the first week of Phase 2 when you were introduced to Sinatra, CSS, HTML, AJAX, javascript, JQuery, and erb all in one day. That week was most likely just as overwhelming, but after 3 weeks you are now a wizard. The same will be true with Rails. So stay confident and keep working hard!! 
