@@ -65,7 +65,7 @@ That said, here's a list of gems I used to run my testing in rails. We'll call i
 
 <a href="https://github.com/jnicklas/capybara" target="_blank">Capybara</a> - allows you to click links, sign in, fill out forms, etc. 
 
-<a href="https://github.com/thoughtbot/shoulda-matchers" target="_blank">Shoulda-Matchers**</a> - allows you to run tests on your models quite easily. Created by ThoughtBot
+<a href="https://github.com/thoughtbot/shoulda-matchers" target="_blank">Shoulda-Matchers</a> - allows you to run tests on your models quite easily. Created by ThoughtBot
 
 <a href="https://github.com/bmabey/database_cleaner" target="_blank">DatabaseCleaner</a> - allows you to run tests in the development and test environments. Watch this <a href="http://railscasts.com/episodes/257-request-specs-and-capybara" target="_blank">Railscast</a>
 
@@ -75,7 +75,7 @@ That said, here's a list of gems I used to run my testing in rails. We'll call i
 
 <a href="https://github.com/maltize/sublime-text-2-ruby-tests" target="_blank">RubyTest</a> - this is actually a Sublime package. It allows you to run your tests straight from Sublime console, super useful. 
 
-These tools make for a speedy and pleasant TDD experience. I highly recommend getting to know them when the time comes. You will surely learn to love them. And if you didn't watch the <a href="http://railscasts.com/episodes/257-request-specs-and-capybara">Railscast</a> I linked to above, I highly recommend you take the 10 minutes to watch it now, it's an excellent overview of TDD and the "toolbelt".
+These tools make for a speedy and pleasant TDD experience. I highly recommend getting to know them when the time comes. You will surely learn to love them. And if you didn't watch the <a href="http://railscasts.com/episodes/257-request-specs-and-capybara" target="_blank">Railscast</a> I linked to above, I highly recommend you take the 10 minutes to watch it now, it's an excellent overview of TDD and the "toolbelt".
 
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#rspec--testing" target="_blank">Rspec & Testing exercise</a> 
 
@@ -231,7 +231,7 @@ In sinatra our forms were built by hand if you will, like so:
 <input type="password" name="user[password]" placeholder="Password">
 <input type="submit" value="Sign up!">
 ```
-Seems all good, right? But to be honest I don't want to keep writing that out over and over. In steps the rails <a href="http://guides.rubyonrails.org/form_helpers.html#binding-a-form-to-an-object">form_for</a> helper. What does form_for do? It allows us to pass an object into the form and will create our ```method```, ```action```, and ```inputs``` for us based on that objects attributes and Rails routes... Confusing, indeed. Check out this example. It may make more sense.
+Seems all good, right? But to be honest I don't want to keep writing that out over and over. In steps the rails <a href="http://guides.rubyonrails.org/form_helpers.html#binding-a-form-to-an-object" target="_blank">form_for</a> helper. What does form_for do? It allows us to pass an object into the form and will create our ```method```, ```action```, and ```inputs``` for us based on that objects attributes and Rails routes... Confusing, indeed. Check out this example. It may make more sense.
 
 Rails form_for in action:
 ```erb
@@ -258,9 +258,9 @@ Which translates to:
 
 The syntax is a bit different, but the above html has the exact same outcome as the Sinatra form. It may not feel so, but check the Sinatra form again. Compare it to the rails form. The same main parameters are there ```action```, ```method```, ```input```, ```names```, ```types```, ```placeholders```, and a ```submit button```. Yes, the rails form has extra parameters but don't get confused. The truth is, both are going to send params[:user] to the "action" route as a "post"... 
 
-Also, don't get bogged down in the details of the ```<div>```. it's part of rails security and prevents CSRF (Cross Site Request Forgery). If you want to learn more, read <a href="http://stackoverflow.com/questions/941594/understand-rails-authenticity-token#answers-header">this</a>. 
+Also, don't get bogged down in the details of the ```<div>```. it's part of rails security and prevents CSRF (Cross Site Request Forgery). If you want to learn more, read <a href="http://stackoverflow.com/questions/941594/understand-rails-authenticity-token#answers-header" target="_blank">this</a>. 
 
-That's it for an intro. Rails forms are super powerful so start using them and keep using them. And if you're interested in learning more check out the exercise or, if you're feeling really frisky, start learning about <a href="http://apidock.com/rails/ActionView/Helpers/FormHelper/fields_for">fields_for and nested forms</a>...
+That's it for an intro. Rails forms are super powerful so start using them and keep using them. And if you're interested in learning more check out the exercise or, if you're feeling really frisky, start learning about <a href="http://apidock.com/rails/ActionView/Helpers/FormHelper/fields_for" target="_blank">fields_for and nested forms</a>...
 
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#forms" target="_blank">Forms exercise</a>
 <h2 id="links">Links</h2>
