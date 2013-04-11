@@ -13,7 +13,6 @@ Table of Contents:
 * <a href="#models--migrations">Models & Migrations</a>
 * <a href="#controllers--routes">Controllers & Routes</a>
 * <a href="#views">Views</a>
-* <a href="#helpers">Helpers</a>
 * <a href="#partials">Partials</a>
 * <a href="#forms">Forms</a>
 * <a href="#links">Links</a>
@@ -23,9 +22,9 @@ Table of Contents:
 <h2 id="introduction">Introduction</h2>
 This guide covers a wide spectrum of IMPORTANT topics in Rails. It does not cover any one topic too deeply. On the contrary, the goal is to introduce you to Rails conventions, not make you an expert in them. 
 
-As you go through you may find yourself confused. This is ok. Rails is confusing at first. You may also find yourself angry (as I did), wondering why the hell we learned Sinatra just to switch to rails. Trust in knowing there is a good reason and your hatred for Rails will soon subside (NOTE: everything you learned in Sinatra is used in Rails, the wording is just a little different. Don't forget this.). Also trust in knowing this tutorial was created a fellow boot with only 7 weeks of programming under his belt. It's not perfect. It is however pretty bad ass and is infinitely more than the Sea Lions and my cohort, the Banana Slugs, had as prep for our final chapter at DBC. 
+As you go through you may find yourself confused. This is ok. Rails is confusing at first. You may also find yourself angry (as I did), wondering why the hell we learned Sinatra just to switch to rails. Trust in knowing there is a good reason and your hatred for Rails will soon subside (NOTE: everything you learned in Sinatra is used in Rails, the wording is just a little different. Don't forget this.). Also trust in knowing this tutorial was created by a fellow boot with only 7 weeks of programming under his belt. It's not perfect... It is however pretty bad ass and is infinitely more than the Sea Lions and my cohort, the Banana Slugs, had as prep for our final chapter at DBC. (NOTE: we were not given any prep for phase 3 \#fail)
 
-So please be kind and please feel free to give back by forking this repo and adding your own thoughts or edits to improve the experience for future boots.
+If you are so inclined to give back and help improve this project, please do so. Forking this repo and adding your own thoughts or edits to improve the experience for future boots is greatly appreciated and I will do my best to add everyone's edits in.
 
 <h2 id="#things-you-should-know-to-succeed-in-phase-3">Things you should know to succeed in phase 3</h2>
 - Phase 3 is unlike any other phase
@@ -70,9 +69,9 @@ That said, here's a list of gems I used to run my testing in rails. We'll call i
 
 <a href="https://github.com/bmabey/database_cleaner" target="_blank">DatabaseCleaner</a> - allows you to run tests in the development and test environments. Watch this <a href="http://railscasts.com/episodes/257-request-specs-and-capybara">Railscast</a>
 
-<a href="https://github.com/johnbintz/guard-rails" target="_blank">Guard</a> - auto runs your tests on save. 
+<a href="https://github.com/johnbintz/guard-rails" target="_blank">Guard</a> - auto runs your tests on save of a file. Follow this <a href="http://ruby.railstutorial.org/chapters/static-pages?version=3.2#sec-3_6_2" target="_blank">tutorial</a> to get setup with guard and the gem below, spork.
 
-<a href="https://github.com/sporkrb/spork" target="_blank">Spork</a> - loads your rails environment *once* for you so it doesn't have to be loaded each time you run tests. Here's a great <a href="http://blog.carbonfive.com/2010/12/10/speedy-test-iterations-for-rails-3-with-spork-and-guard/">tutorial</a> on getting Spork and Guard up and running.  
+<a href="https://github.com/sporkrb/spork" target="_blank">Spork</a> - loads your rails environment *once* for you so it doesn't have to be loaded each time you run tests. Here's another good <a href="http://blog.carbonfive.com/2010/12/10/speedy-test-iterations-for-rails-3-with-spork-and-guard/">tutorial</a> on getting Spork and Guard up and running.  
 
 <a href="https://github.com/maltize/sublime-text-2-ruby-tests" target="_blank">RubyTest</a> - this is actually a Sublime package. It allows you to run your tests straight from Sublime console, super useful. 
 
@@ -117,10 +116,46 @@ That deserves a \#Railsmagic!
 That's about the most I think you should know about models and migrations in Rails. Everything we did in Sinatra still applies with associations and validations. These are part of ActiveRecord and don't change from one "framework" to the other. 
 
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#models--migrations" target="_blank">Models & Migrations exercise</a>
-<h2 id="controllers">Controllers & Routes</h2>
-Controllers in rails are a bit different than in Sinatra. The main difference is the syntax of the routes. In rails we have a "routes.rb" file. This file is incredibly powerful and important in rails. It's main purpose in life is to serve as an index for rails to know where to find each "route" or url that an user may visit.  Think of it as an old school <a href="http://en.wikipedia.org/wiki/Switchboard_operator">switchboard (phone) operator</a>. Calls come in and the operator connects the call to the proper "jack" or line. **more code needs to be written here**<a href="https://github.com/keithtom">Keith Tom</a> does a good job of explaining routes <a href="https://gist.github.com/keithtom/3f311c392326bc659b54#readme">here</a>. Go through and read his section on routing. Again, this is important. 
 
-Now that you've read Keith's post my job is done... That said, I will give a quick example of the difference in controllers & routes for those who are interested. 
+<h2 id="controllers">Controllers & Routes</h2>
+Controllers in rails are a bit different than in Sinatra. The main difference is the syntax of the routes. In rails we have a ```routes.rb``` file. This file is incredibly powerful and important. It's main purpose in life is to serve as an index for rails to know where to find each "route" or url that a user may visit.  Think of it as an old school <a href="http://en.wikipedia.org/wiki/Switchboard_operator">switchboard (phone) operator</a>. Calls come in and the operator connects the call to the proper "jack" or line. ```routes.rb``` does the same thing except with urls. When a url is called it asks the router to connect it to the proper route. The router knows which route goes where because you state the routes in the ```routes.rb``` file. 
+
+An example ```routes.rb``` file:
+```ruby
+QuestionMonkey::Application.routes.draw do
+  root to: 'static_pages#home'
+  resources :users
+  resources :surveys, :only => [:new, :create, :show, :index]
+  resources :questions, :only => [:new, :create, :destroy]
+  match "users/profile", to: "users#profile"
+end
+```
+
+OR this from <a href="https://github.com/shivamd" target="_blank">Shivam D</a>, <a href="https://github.com/jam-tmrw" target="_blank">James (Jimbo) Hamilton</a>, and myself's group project <a href="https://github.com/rguerrettaz/mockrates" target="_blank">Mockrates</a> from week 1 of phase 3:
+```ruby
+Mockrates::Application.routes.draw do
+
+  root :to => 'users#show'
+  resources :github_sessions, only: [:new]
+  resources :users
+  resources :challenges
+  resources :sessions
+  resources :attempts
+  resources :weeks
+
+  match '/login', to: 'sessions#new'
+  match 'auth/:provider/callback', to: 'github_sessions#create'
+  match '/test', to: 'challenges#test'
+  match '/test2', to: 'challenges#test2'
+  match '/challenges/:id/interactive', to: 'challenges#interactive'
+  match '/locale/en.xml', to: 'locale#en'
+  
+end
+```
+
+Now that you are thoroughly confused about ```routes.rb``` I will send you off to learn how it truly works. <a href="https://github.com/keithtom">Keith Tom</a> does a great job of explaining routes <a href="https://gist.github.com/keithtom/3f311c392326bc659b54#readme">here</a>. Go through and read his section on routing. This is important. Please make sure to read his post as it sets up many other topics below.  
+
+Now that you've read Keith's post my job here is done... I will however offer a quick exampe of the difference in controllers between Sinatra to Rails.
 
 In Sinatra our controller looks like this:
 ```ruby
@@ -147,7 +182,7 @@ class UsersController < ActiveRecord::Base
   end
 end
 ```
-What in the world!! Right? Maybe not, but this is a little confusing when you don't know how rails routing works so, for the third time, go read <a href="https://gist.github.com/keithtom/3f311c392326bc659b54#readme">Keith's post</a>. And if you still don't get it, check out the exercise below.
+What in the world!! Right? Maybe not, but it's a little confusing when you don't know how rails routing works so, for the third time, go read <a href="https://gist.github.com/keithtom/3f311c392326bc659b54#readme">Keith's post</a>. And if you still don't get it, check out the exercise below.
    
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#controllers" target="_blank">Controllers exercise</a>
 <h2 id="views">Views</h2>
@@ -159,9 +194,31 @@ Views in rails are similar to those in Sinatra. There are a few main differences
 That's really it for views.
 
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#views" target="_blank">Views exercise</a>
-<h2 id="helpers">Helpers</h2>
-If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#helpers" target="_blank">Helpers exercise</a>
 <h2 id="partials">Partials</h2>
+Partials in Rails are a bit different than in Sinatra. They are still stored in a file the same way but the way they are called varies slightly. 
+
+Let's start with where and how to store partials. In Sinatra we stored our partials in the ```/views``` folder. Or maybe some of us more advnaced monkeys created a separate ```/views/partials``` file. Either way they were prefixed with an underscore like so ```_my_amazing_partial.html```.  
+
+In Rails we still prefix the partial with an underscore (yay!). And we still store them in the views folder (double yay!). But the <a href="http://stackoverflow.com/questions/2384631/where-to-put-partials-shared-by-the-whole-application-in-rails#answer-2385178">rails convention for storing partials</a> is to store them in a ```/views/shared``` folder. Now you definitely don't have to do this. It will work just fine to store your partials in their respective views folders, but I personally enjoy following convention. 
+
+So imagining we are storing our partials in the ```/views/shared``` folder, how do we call them from inside our view? It's not too difficult. We use ```render```, like so:
+
+```erb
+<%= render '/shared/my_amazing_partial' %>
+```
+
+This varies from the Sinatra way:
+```erb
+<%= erb :'/partials/_my_amazing_partial' %> 
+```
+OR
+```erb
+<%= erb :_my_amazing_partial %>
+```
+Notice in Rails we do not include the underscore when we call the partial from the view. This may seem a bit strange, but its no big deal really. 
+
+I think that's it for partials!
+
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#partials" target="_blank">Partials exercise</a>
 <h2 id="forms">Forms</h2>
 Forms in Rails are \#awesome. You may not think so at first, but they are. What makes them so great you wonder? They are powerful little buggers that allow you to write less code and offer more functionality than in Sinatra. Here's what I mean:
@@ -207,11 +264,16 @@ That's it for an intro. Rails forms are super powerful so start using them and k
 
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#forms" target="_blank">Forms exercise</a>
 <h2 id="links">Links</h2>
+Links in rails are quite different than Sinatra. 
+**add more**
+
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#links" target="_blank">Links exercise</a>
 <h2 id="ajax">AJAX</h2>
+**needs content**
+
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#ajax" target="_blank">AJAX exercise</a>
 <h2 id="environments">Environments</h2>
-Don't worry too much about environments. There are 3 of course: Development, Test, & Production. All you might want to know for now is to run your rspec tests you must type in 
+Don't worry too much about environments. There are 3 of course: Development, Test, & Production. All you might want to know for now is that in order to run your rspec tests you must type in 
 ```
 $ rake db:test:prepare
 ```
