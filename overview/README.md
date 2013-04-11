@@ -282,5 +282,5 @@ after you run your
 ```
 $ rake db:migrate
 ```
-
-That's all folks. The final advice I will share is that the first week of Rails can (will) be treacherous. When it is, remember back to the first week of Phase 2 when you were introduced to Sinatra, CSS, HTML, AJAX, javascript, JQuery, and erb all in one day. That week was most likely just as overwhelming, but after 3 weeks you are now a wizard. The same will be true with Rails. So stay confident and keep working hard!! 
+<h2>Conclusion</h2>
+That's all folks. The final advice I will share is that the first week of Rails can (will) be treacherous. When it is, remember back to the first week of Phase 2 when you were introduced to Sinatra, CSS, HTML, AJAX, JavaScript, JQuery, and ERB all in one day. That week was most likely just as overwhelming, but after 3 weeks you are now a wizard. The same will be true with Rails. So stay confident and keep working hard!! 
