@@ -65,13 +65,13 @@ That said, here's a list of gems I used to run my testing in rails. We'll call i
 
 <a href="https://github.com/jnicklas/capybara" target="_blank">Capybara</a> - allows you to click links, sign in, fill out forms, etc. 
 
-<a href="https://github.com/thoughtbot/shoulda-matchers">Shoulda-Matchers**</a> - allows you to run tests on your models quite easily. Created by ThoughtBot
+<a href="https://github.com/thoughtbot/shoulda-matchers" target="_blank">Shoulda-Matchers**</a> - allows you to run tests on your models quite easily. Created by ThoughtBot
 
-<a href="https://github.com/bmabey/database_cleaner" target="_blank">DatabaseCleaner</a> - allows you to run tests in the development and test environments. Watch this <a href="http://railscasts.com/episodes/257-request-specs-and-capybara">Railscast</a>
+<a href="https://github.com/bmabey/database_cleaner" target="_blank">DatabaseCleaner</a> - allows you to run tests in the development and test environments. Watch this <a href="http://railscasts.com/episodes/257-request-specs-and-capybara" target="_blank">Railscast</a>
 
 <a href="https://github.com/johnbintz/guard-rails" target="_blank">Guard</a> - auto runs your tests on save of a file. Follow this <a href="http://ruby.railstutorial.org/chapters/static-pages?version=3.2#sec-3_6_2" target="_blank">tutorial</a> to get setup with guard and the gem below, spork.
 
-<a href="https://github.com/sporkrb/spork" target="_blank">Spork</a> - loads your rails environment *once* for you so it doesn't have to be loaded each time you run tests. Here's another good <a href="http://blog.carbonfive.com/2010/12/10/speedy-test-iterations-for-rails-3-with-spork-and-guard/">tutorial</a> on getting Spork and Guard up and running.  
+<a href="https://github.com/sporkrb/spork" target="_blank">Spork</a> - loads your rails environment *once* for you so it doesn't have to be loaded each time you run tests. Here's another good <a href="http://blog.carbonfive.com/2010/12/10/speedy-test-iterations-for-rails-3-with-spork-and-guard/" target="_blank">tutorial</a> on getting Spork and Guard up and running.  
 
 <a href="https://github.com/maltize/sublime-text-2-ruby-tests" target="_blank">RubyTest</a> - this is actually a Sublime package. It allows you to run your tests straight from Sublime console, super useful. 
 
@@ -91,7 +91,7 @@ This was actually code Jesse wrote for us. In Sinatra this rake task does not ex
 ```
 $ rails generate model MyModel
 ```
-This will create a model in assets/models named "my_model.rb" and a migration named "create_my_models.rb". Very useful. 
+This will create a model in ```/assets/models``` named ```my_model.rb``` and a migration named ```create_my_models.rb```. Very useful. 
 
 Probably the most exiting thing about ```$ rails generate``` is the ability to pass table attributes from command line. Here's an example:
 ```
@@ -118,7 +118,7 @@ That's about the most I think you should know about models and migrations in Rai
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#models--migrations" target="_blank">Models & Migrations exercise</a>
 
 <h2 id="controllers">Controllers & Routes</h2>
-Controllers in rails are a bit different than in Sinatra. The main difference is the syntax of the routes. In rails we have a ```routes.rb``` file. This file is incredibly powerful and important. It's main purpose in life is to serve as an index for rails to know where to find each "route" or url that a user may visit.  Think of it as an old school <a href="http://en.wikipedia.org/wiki/Switchboard_operator">switchboard (phone) operator</a>. Calls come in and the operator connects the call to the proper "jack" or line. ```routes.rb``` does the same thing except with urls. When a url is called it asks the router to connect it to the proper route. The router knows which route goes where because you state the routes in the ```routes.rb``` file. 
+Controllers in rails are a bit different than in Sinatra. The main difference is the syntax of the routes. In rails we have a ```routes.rb``` file. This file is incredibly powerful and important. It's main purpose in life is to serve as an index for rails to know where to find each "route" or url that a user may visit.  Think of it as an old school <a href="http://en.wikipedia.org/wiki/Switchboard_operator" target="_blank">switchboard (phone) operator</a>. Calls come in and the operator connects the call to the proper "jack" or line. ```routes.rb``` does the same thing except with urls. When a url is called it asks the router to connect it to the proper route. The router knows which route goes where because you state the routes in the ```routes.rb``` file. 
 
 An example ```routes.rb``` file:
 ```ruby
@@ -153,7 +153,7 @@ Mockrates::Application.routes.draw do
 end
 ```
 
-Now that you are thoroughly confused about ```routes.rb``` I will send you off to learn how it truly works. <a href="https://github.com/keithtom">Keith Tom</a> does a great job of explaining routes <a href="https://gist.github.com/keithtom/3f311c392326bc659b54#readme">here</a>. Go through and read his section on routing. This is important. Please make sure to read his post as it sets up many other topics below.  
+Now that you are thoroughly confused about ```routes.rb``` I will send you off to learn how it truly works. <a href="https://github.com/keithtom" target="_blank">Keith Tom</a> does a great job of explaining routes <a href="https://gist.github.com/keithtom/3f311c392326bc659b54#readme" target="_blank">here</a>. Go through and read his section on routing. This is important. Please make sure to read his post as it sets up many other topics below.  
 
 Now that you've read Keith's post my job here is done... I will however offer a quick exampe of the difference in controllers between Sinatra to Rails.
 
@@ -182,7 +182,7 @@ class UsersController < ActiveRecord::Base
   end
 end
 ```
-What in the world!! Right? Maybe not, but it's a little confusing when you don't know how rails routing works so, for the third time, go read <a href="https://gist.github.com/keithtom/3f311c392326bc659b54#readme">Keith's post</a>. And if you still don't get it, check out the exercise below.
+What in the world!! Right? Maybe not, but it's a little confusing when you don't know how rails routing works so, for the third time, go read <a href="https://gist.github.com/keithtom/3f311c392326bc659b54#readme" target="_blank">Keith's post</a>. And if you still don't get it, check out the exercise below.
    
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#controllers" target="_blank">Controllers exercise</a>
 <h2 id="views">Views</h2>
@@ -199,7 +199,7 @@ Partials in Rails are a bit different than in Sinatra. They are still stored in 
 
 Let's start with where and how to store partials. In Sinatra we stored our partials in the ```/views``` folder. Or maybe some of us more advnaced monkeys created a separate ```/views/partials``` file. Either way they were prefixed with an underscore like so ```_my_amazing_partial.html```.  
 
-In Rails we still prefix the partial with an underscore (yay!). And we still store them in the views folder (double yay!). But the <a href="http://stackoverflow.com/questions/2384631/where-to-put-partials-shared-by-the-whole-application-in-rails#answer-2385178">rails convention for storing partials</a> is to store them in a ```/views/shared``` folder. Now you definitely don't have to do this. It will work just fine to store your partials in their respective views folders, but I personally enjoy following convention. 
+In Rails we still prefix the partial with an underscore (yay!). And we still store them in the views folder (double yay!). But the <a href="http://stackoverflow.com/questions/2384631/where-to-put-partials-shared-by-the-whole-application-in-rails#answer-2385178" target="_blank">rails convention for storing partials</a> is to store them in a ```/views/shared``` folder. Now you definitely don't have to do this. It will work just fine to store your partials in their respective views folders, but I personally enjoy following convention. 
 
 So imagining we are storing our partials in the ```/views/shared``` folder, how do we call them from inside our view? It's not too difficult. We use ```render```, like so:
 
