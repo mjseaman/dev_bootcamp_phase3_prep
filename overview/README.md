@@ -1,7 +1,7 @@
 Overview
 ==============
 
-Onboarding for Rails. The below topics will help you make a smooth transition from Sinatra to Rails. Skin through them to familiarize yourself. If you have time check out some of the exercises, but don't kill yourself. 
+Onboarding for Rails. The below topics will help you make a smooth transition from Sinatra to Rails. Skim through them to familiarize yourself. If you have time check out some of the exercises, but don't kill yourself. 
 
 Table of Contents:
 -----------
