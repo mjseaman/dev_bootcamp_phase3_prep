@@ -77,7 +77,7 @@ $ rails generate model MyModel
 ```
 This will create a model in ```/assets/models``` named ```my_model.rb``` and a migration named ```create_my_models.rb```. Very useful. 
 
-Probably the most exiting thing about ```$ rails generate``` is the ability to pass table attributes from command line. Here's an example:
+Probably the most exciting thing about ```$ rails generate``` is the ability to pass table attributes from command line. Here's an example:
 ```
 rails generate model MyModel name:string email:string password:string
 ```
@@ -139,7 +139,7 @@ end
 
 Now that you are thoroughly confused about ```routes.rb``` I will send you off to learn how it truly works. <a href="https://github.com/keithtom" target="_blank">Keith Tom</a> does a great job of explaining routes <a href="https://gist.github.com/keithtom/3f311c392326bc659b54#readme" target="_blank">here</a>. Go through and read his section on routing. This is important. Please make sure to read his post as it sets up many other topics below.  
 
-Now that you've read Keith's post my job here is done... I will however offer a quick exampe of the difference in controllers between Sinatra to Rails.
+Now that you've read Keith's post my job here is done... I will however offer a quick example of the difference in controllers between Sinatra to Rails.
 
 In Sinatra our controller looks like this:
 ```ruby
@@ -170,9 +170,9 @@ What in the world!! Right? Maybe not, but it's a little confusing when you don't
    
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#controllers" target="_blank">Controllers exercise</a>
 <h2 id="views">Views</h2>
-Views in rails are similar to those in Sinatra. There are a few main differences:
+Views in rails are similar to those in Sinatra. There are only a few key differences:
 - They end in ```html.erb``` instead of ```html```
-- They are organized nicely by model name. I.e. Your users views are in ```app/views/users```
+- They are organized nicely by model name. I.e. Your users views are in ```app/views/users/```
 - They are named after the route they represent. That's to say if you have a ```users/new``` route, the view file for this route would be ```apps/views/users/new.html.erb```. If you are still confused about routes because you didn't read Keith's post, please read it... If you read Keith's post and are still confused then rest assured you will understand soon. :)
 
 That's really it for views.
