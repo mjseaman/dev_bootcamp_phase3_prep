@@ -3,22 +3,6 @@ Overview
 
 Onboarding for Rails. The below topics will help you make a smooth transition from Sinatra to Rails. Skim through them to familiarize yourself. If you have time check out some of the exercises, but don't kill yourself. 
 
-Table of Contents:
------------
-
-* <a href="#introduction">Introduction (READ ME first)</a>
-* <a href="#things-you-should-know-to-succeed-in-phase-3">Things you should know to succeed in phase 3</a>
-* <a href="#how-to-use-this-guide">How to use</a>
-* <a href="#rspec--testing">Rspec & Testing</a>
-* <a href="#models--migrations">Models & Migrations</a>
-* <a href="#controllers--routes">Controllers & Routes</a>
-* <a href="#views">Views</a>
-* <a href="#partials">Partials</a>
-* <a href="#forms">Forms</a>
-* <a href="#links">Links</a>
-* <a href="#ajax">Ajax</a>
-* <a href="#environments">Environments</a>
-
 <h2 id="introduction">Introduction</h2>
 This guide covers a wide spectrum of IMPORTANT topics in Rails. It does not cover any one topic too deeply. On the contrary, the goal is to introduce you to Rails conventions, not make you an expert in them. 
 
