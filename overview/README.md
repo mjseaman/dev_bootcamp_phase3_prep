@@ -166,7 +166,9 @@ class UsersController < ActiveRecord::Base
   end
 end
 ```
-What in the world!! Right? Maybe not, but it's a little confusing when you don't know how rails routing works so, for the third time, go read <a href="https://gist.github.com/keithtom/3f311c392326bc659b54#readme" target="_blank">Keith's post</a>. And if you still don't get it, check out the exercise below.
+What in the world!! Right? Maybe not, but it's a little confusing when you don't know how rails routing works, so, for the third time, go read Keith's <a href="https://gist.github.com/keithtom/3f311c392326bc659b54#readme" target="_blank">post</a>. And if you still don't get it, check out the exercise below.
+
+NOTE: run ```rake routes``` to view the routes of your app. If you have an app do it now. This is often used, so remember it!
    
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#controllers" target="_blank">Controllers exercise</a>
 <h2 id="views">Views</h2>
