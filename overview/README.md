@@ -248,12 +248,42 @@ That's it for an intro. Rails forms are super powerful so start using them and k
 
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#forms" target="_blank">Forms exercise</a>
 <h2 id="links">Links</h2>
-Links in rails are quite different than Sinatra. 
-**add more**
+Links in Rails are quite different than Sinatra. Rails links are like the form_to we spoke of above. They are called by typing ```link_to```. 
+
+Let's look at the Sinatra links and compare them to Rails. 
+
+Sinatra:
+```erb
+<ul>
+  <% if session[:id] %>
+    <li><a href="/users/profile">profile</a></li>
+    <li><a href="/users/logout">logout</a></li>
+  <% else %> 
+    <li><a href="/users/login">login</a></li>
+    <li><a href="/users/signup">signup</a></li>
+  <%end %>
+</ul>
+```
+
+Rails: 
+
+```erb
+<ul>
+  <% if current_user %>
+    <%= link_to "Profile", "/profile" %>
+    <%= link_to "Logout", session_path, :method => :delete %>
+  <% else %>
+    <%= link_to "Sign up", new_user_path %>
+    <%= link_to "Login", new_session_path %>
+  <% end %>
+</ul>
+```
+
+More magic... Seriously, wth?! Alas, it 'tis true, the Rails is a magical being. 
 
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#links" target="_blank">Links exercise</a>
 <h2 id="ajax">AJAX</h2>
-**needs content**
+**need to add content!!! Sorry guys and gals.**
 
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#ajax" target="_blank">AJAX exercise</a>
 <h2 id="environments">Environments</h2>
