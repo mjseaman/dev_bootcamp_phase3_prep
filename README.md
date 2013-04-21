@@ -16,7 +16,7 @@ The overview briefly covers the main topics of concern in rails. The exercises g
 My Motivation
 -------------
 
-After experiencing the seemingly mind shattering shift from Sinatra to Rails, I have decided to create a prep sheet for future [Dev Bootcamp](http://devbootcamp.com/) boots. The hope is that they will  escape my, and the many boots before me's, same frustrating fate (wondering what in God's name is going on).
+After experiencing the seemingly mind shattering shift from Sinatra to Rails, I have decided to create a prep sheet for future [Dev Bootcamp](http://devbootcamp.com/) boots. The hope is that they will  escape my, and the many boots before me's, same frustrating fate (wondering wtf is going on).
 
 
 Contribution is Encouraged
