@@ -7,7 +7,9 @@ The Format
 -------------
 There are two sections: 
 - [Overview](https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview)
-- [Exercises](https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises)
+- [Exercises](https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises) (NOTE: work in progress)
+
+
 
 The overview briefly covers the main topics of concern in rails. The exercises give you a chance to get your hands dirty. The overview is to be read first. Any deviation from the path will end in <a  href="http://omgface.com/evil/evil%20baby7.jpg" target="_blank">death</a>....
 
