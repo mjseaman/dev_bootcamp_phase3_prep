@@ -11,14 +11,11 @@ As you go through you may find yourself confused. This is ok. Rails is confusing
 If you are so inclined to give back and help improve this project, please do so. Forking this repo and adding your own thoughts or edits to improve the experience for future boots is greatly appreciated and I will do my best to add everyone's edits in.
 
 <h2 id="#things-you-should-know-to-succeed-in-phase-3">Things you should know to succeed in phase 3</h2>
-- Phase 3 is unlike any other phase
-- It is less structured
-- You should expect to struggle
+- Phase 3 is unlike any other phase - It is less structured and thus can be a rude awakening
+- Rails is a behemoth and you will not learn it overnight so be patient and diligent
 - Rails generate is not to be used for anything but your models 
 - Rails generate is not to be used for anything but your models (yes, you need to hear this twice)
 - <a href="http://ruby.railstutorial.org/ruby-on-rails-tutorial-book" target="_blank">Hartl</a> is a useful guide, but do not take it as gospel
-- Hartl is a useful guide, but do not take it as gospel (yes, you ALSO need to hear this twice)
-- Go slow
 - Learn your tools (aka Gems) and learn them well
 - Struggle with TDD even though you don't want to write it
 - Things in Rails are not that different than what you learned in Sinatra
@@ -26,7 +23,7 @@ If you are so inclined to give back and help improve this project, please do so.
 - Learn to enjoy the struggle because your life as a programmer is one BIG effing struggle
 - Rails is your friend, if you're not having fun you're doing it wrong! :)
 (If you're not having fun and you're actually doing it right, ask Jeffrey for some "slap therapy")
-- And finally... this is just the beginning, not the end..
+- And last, but not least, you should be familiar with the topics I cover here. If you understand the below, most everything else will be a breeze.
 
 <h2 id="how_to-use-this-guide">How to use this guide</h2>
 The prep works like this: 
