@@ -6,19 +6,21 @@ Exercises
 If you haven't done so yet, read the [overview page](https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview). Doing the exercises before reading the overview surely leads to <a href="http://omgface.com/evil/evil%20baby7.jpg" target="_blank">death</a>...
 
 <h2 id="introduction">Introduction</h2>
-We, the prior boots, have done our best to create exercises for you, current boot, to complete in hopes you don't feel completely lost when you meet Rails in Week 1 of Phase 3. These exercises are a work in progress and your feedback is greatly appreciated and needed for us to continue improving. If you find an exercise needing improvement please fork the repo and update accordingly, submitting a pull request to notify us. We will add your improvements to the prep as soon as possible.
+Below are exercises to familiarize you with the major topics in Rails. Many of the exercises build on the previous one's so it's recommended to go in order. If you would like to contribute, please do so by forking and running a pull request. 
 
-Also note there may not be exercises for all topics. Again, please help by creating an exercise for us if you can. :) 
+OK cool. Let's get started!
 
 <h2 id="rails-setup">Rails setup</h2>
 
-Before we get started let's get setup with Rails. Most of you should already of Rails setup, but for those who don't follow <a href="http://ruby.railstutorial.org/ruby-on-rails-tutorial-book#sec-1_2" target="_blank">this</a> guide. Once completed create a new app by typing:
+Before we get started let's get setup with Rails. Most of you should already have Rails installed on your computer. If you don't then follow <a href="http://ruby.railstutorial.org/ruby-on-rails-tutorial-book#sec-1_2" target="_blank">this</a> guide. 
+
+Now, let's create a new app by typing:
 ```sh
 $ rails new practice_app -T
 ``` 
 This will create a new Rails app within whatever directory you are currently in. (I recommend doing it from the Desktop directory). The "-T" is short for "--skip-test-unit", which bypasses the creation of the Rails default test unit. We will be writing own tests in rspec, so we don't need it. 
 
-Moving on!
+That was easy. Now let's write our first test!
 
 <h2 id="rspec--testing">Rspec & Testing</h2>
 For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#rspec--testing" target="_blank">Rspec & Testing overview</a>
@@ -44,7 +46,7 @@ $ rails generate rspec:install
 
 OK, cool. We now have Rspec installed. Let's write a unit test for Users. "But we haven't created users yet! How will we test them?". Right, that's the point of TDD - to write tests first. So let's write the failing tests for a Users model that doesn't exist. Then we'll get the tests to pass in the next section.
 
-Start by creating a "models" folder within our newly created "spec" folder. Then create a "user_spec.rb" file. Open this file and add the following code: 
+Start by creating a "models" folder within our newly created "spec" folder. Then create a "user_spec.rb" file. Like so: ``` /spec/models/user_spec.rb``` Open this file and add the following code: 
 
 ```ruby
 require 'spec_helper'
@@ -114,7 +116,7 @@ Next we must prepare our test database with:
 ```sh
 $ rake db:test:prepare
 ```
-If we run our tests again we find they are still failing. So how do we fix this? Well one problem we are having is with mass assignment. We cannot mass assign attributes to a model without declaring them in our attr_accessible statement. So let's declare our attributes in the model. To do so navigate to ```app/models/user.rb``` and open the file. From here let's add our attribute accessible's like so:
+If we run our tests again we find they are still failing. So how do we fix this? Well one problem we are having is with <a href="http://guides.rubyonrails.org/security.html#mass-assignment" target="_blank">mass assignment</a>. We cannot mass assign attributes to a model without declaring them in our attr_accessible statement. So let's declare our attributes in the model. To do so navigate to ```app/models/user.rb``` and open the file. From here let's add our attribute accessible's like so:
 ```ruby
 class User < ActiveRecord::Base
   attr_accessible :username, :email, :password
@@ -132,15 +134,30 @@ Really not that difficult, was it? Maybe so, maybe not. Either way we did succes
 
 <h2 id="controllers">Controllers</h2>
 For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#controllers" target="_blank">Controllers overview</a>
+
+<!-- create a users controller and routes for signing up: new, create, show. And create a static pages controller -->
+
 <h2 id="views">Views</h2>
 For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#views" target="_blank">Views overview</a>
-<h2 id="helpers">Helpers</h2>
-For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#helpers" target="_blank">Helpers overview</a>
+
+<!-- create a static pages index page, a signup page, and a show page -->
+
 <h2 id="partials">Partials</h2>
 For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#partials" target="_blank">Partials overview</a>
+
+<!-- create a partial for the nav bar, use anchor tags -->
+
 <h2 id="forms">Forms</h2>
 For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#forms" target="_blank">Forms overview</a>
+
+<!-- Create signup form on user#new page -->
+
 <h2 id="links">Links</h2>
 For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#links" target="_blank">Links overview</a>
+
+<!-- Replace anchor tag in navbar with link_to -->
+
 <h2 id="ajax">AJAX</h2>
 For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#ajax" target="_blank">AJAX overview</a>
+
+<!-- Ajaxify the errors for the signup page? -->
