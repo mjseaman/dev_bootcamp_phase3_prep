@@ -1,7 +1,7 @@
 Phase 3 Prep
 ========================
 
-The main goal of this document is to introduce Phase 3 students to Rails, point out the main differences between Rails and Sinatra, and offer first hand experience and guidance to those making the switch from Sinatra to Rails. 
+The main goal of this document is to introduce Phase 3 students to Rails. In my experience the shift from Sinatra to Rails can be confusing for some. My hope with this prep is to point out the main differences between Rails and Sinatra, and offer first hand experience and guidance to those making the switch. 
 
 The Format
 -------------
@@ -16,7 +16,7 @@ The overview briefly covers the main topics of concern in rails. The exercises g
 My Motivation
 -------------
 
-After experiencing the jarring shift from Sinatra to Rails, I've decided to create a prep sheet for future [Dev Bootcamp](http://devbootcamp.com/) boots. The hope is they'll  be better prepared to make the shift than those before them.
+After experiencing the jarring shift from Sinatra to Rails, I've decided to create a prep sheet for future [Dev Bootcamp](http://devbootcamp.com/) boots. The hope is they'll  be better prepared to make the switch than those before them.
 
 
 Contribution is Encouraged
