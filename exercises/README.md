@@ -397,5 +397,5 @@ Works? Sweet!
 
 Holy hell we're finally done! I hope you enjoyed doing these exercises as much as I enjoyed making them for you. If you're interested in learning more you can always <a href="http://adventuresincoding.tumblr.com" target="_blank">check out my blog</a> where you'll find more tutorials and tips. And if you'd like to connect feel free to <a href="http://facebook.com/rguerrettaz" target="_blank">add me as a friend</a> on Facebook. That's it. :)
 
-GOOD LUCK!
+GOOD LUCK! And keep working hard! You're almost done!
 
