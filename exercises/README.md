@@ -196,10 +196,25 @@ Missing template users/new, application/new....
 
 OK, cool! We have a controller setup, now we need a tempalte (or view) for our ```users/new``` page. Let's get it done in the next section.
 
-<!-- create a users controller and routes for signing up: new, create, show. And create a static pages controller -->
-
 <h2 id="views">Views</h2>
 For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#views" target="_blank">Views overview</a>
+
+Picking up where we left off in the controllers exercise we are going to create a signup page for the url ```localhost:3000/users/new```. To do this we first need to add a ```users``` folder to ```app/views```. The path for this folder should look like ```app/views/users```. 
+
+Great. Now let's create a view for the signup page. To do so add a file called ```new.html.erb``` to ```app/views/users```. NOTE: For those making the shift from Sinatra to Rails you will note here that our html files are prefixed with ```.html.erb```. As you remember, in Sinatra files were simply prefixed with ```.erb```. This is a convention in rails. Both render the same outcome.
+
+Before we test this page in the browser let's add a little text. Something like this should work fine:
+
+```html
+<h1>This is a the user signup page!</h1>
+<p>Ahhhhh!!!!</p>
+```
+
+Now navigate to ```localhost:3000/users/new```. Did it work? Of course it did!! Woohoo! Party time! We now have "Models and Controllers and Views, OH MY!!!"
+
+You are officially a Rails rockstar. You can retire now....
+
+OK, now that you've retired, let's do some more work. :P  First things first, we can't actually sign any users up. So let's jump to the next section where we'll add a signup form using the Rail's helper ```form_for```.
 
 <!-- create a static pages index page, a signup page, and a show page -->
 
