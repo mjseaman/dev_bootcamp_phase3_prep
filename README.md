@@ -7,7 +7,7 @@ The Format
 -------------
 There are two sections: 
 - [Overview](https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview)
-- [Exercises](https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises) (NOTE: work in progress)
+- [Exercises](https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises)
 
 
 
