@@ -6,6 +6,8 @@ If you haven't done so yet, read the [overview page](https://github.com/rguerret
 <h2 id="introduction">Introduction</h2>
 Below are exercises to familiarize you with the major topics in Rails. Many of the exercises build on the previous one's so it's recommended to go in order. If you would like to contribute, please do so by forking and running a pull request. 
 
+**Estimated time to complete is 2 hours**
+
 OK cool. Let's get started!
 
 <h2 id="rails-setup">Rails setup</h2>
