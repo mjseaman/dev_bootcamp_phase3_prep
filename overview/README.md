@@ -281,10 +281,7 @@ Rails:
 More magic... Seriously, wth?! Alas, it 'tis true, the Rails is a magical being. 
 
 If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#links" target="_blank">Links exercise</a>
-<h2 id="ajax">AJAX</h2>
-**need to add content!!! Sorry guys and gals.**
 
-If you'd like to learn more check out the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/exercises#ajax" target="_blank">AJAX exercise</a>
 <h2 id="environments">Environments</h2>
 Don't worry too much about environments. There are 3 of course: Development, Test, & Production. All you might want to know for now is that in order to run your rspec tests you must type in 
 ```
