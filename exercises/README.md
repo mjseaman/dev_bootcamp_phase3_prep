@@ -1,5 +1,3 @@
-# THIS IS A WORK IN PROGRESS. MORE EXERCISES TO COME SOON
-
 Exercises
 ===============
 
