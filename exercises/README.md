@@ -135,6 +135,67 @@ Really not that difficult, was it? Maybe so, maybe not. Either way we did succes
 <h2 id="controllers">Controllers</h2>
 For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#controllers" target="_blank">Controllers overview</a>
 
+So we now have a users model. Next let's create a way to make new users from the web. First we'll need to create a users controller, but before we do this let's check out what routes are available to us. Run ```$ rake routes``` to see what routes are available. At this point there shouldn't be any. Why? Because we haven't created any quite yet. 
+
+Let's run another test. Start the rails server with ```$ rails s```. Now navigate to ```localhost:3000```. We've got this default home page. Cool. Now navigate to ```localhost:3000/users/new```. This is rails default url for creating new users given we have "users" model. 
+
+What's the error message you get when you hit this url? It should look like this:
+```
+No route matches [GET] "/users/new"
+```
+
+Why's that? Because we haven't created the route for this url yet. So let's now create routes for our users model. To do this open the ```config/routes.rb``` file. In this file let's add the below:
+
+```ruby
+PracticeApp::Application.routes.draw do
+  resources :users # This is the line to add
+  
+end
+```
+
+Now run ```$ rake routes``` again. This time our routes should look like this:
+
+```
+    users GET    /users(.:format)          users#index
+          POST   /users(.:format)          users#create
+ new_user GET    /users/new(.:format)      users#new
+edit_user GET    /users/:id/edit(.:format) users#edit
+     user GET    /users/:id(.:format)      users#show
+          PUT    /users/:id(.:format)      users#update
+          DELETE /users/:id(.:format)      users#destroy
+```
+
+Now navigate back to our users/new page. ``` localhost:3000/users/new```. This time we should be receiving a different error:
+```
+The action 'new' could not be found for UsersController
+```
+
+OK, cool. So we have our routes setup but our controller has no action 'new'. It's time we setup our controller. To do so we'll navigate to our ```app/controllers``` folder and create a new file called "users_controller.rb". Add the below to the file:
+
+```ruby
+class UsersController < ApplicationController 
+
+end
+```
+
+We now have a users controller shell setup, but still no 'new' action. To get this action we add the following:
+
+```ruby
+class UsersController < ApplicationController 
+ 
+  def new
+  end
+  
+end
+```
+
+Now navigate to ```localhost:3000/users/new``` one more time. The new error we now get is:
+```
+Missing template users/new, application/new....
+```
+
+OK, cool! We have a controller setup, now we need a tempalte (or view) for our ```users/new``` page. Let's get it done in the next section.
+
 <!-- create a users controller and routes for signing up: new, create, show. And create a static pages controller -->
 
 <h2 id="views">Views</h2>
