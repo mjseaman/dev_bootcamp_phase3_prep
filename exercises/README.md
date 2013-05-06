@@ -291,7 +291,7 @@ NOTE: we are not handling errors in this tutorial. To do so you'd add an else st
 
 Now try to sign up. You'll get an error about our show page not existing:
 ```
-Missing template users/show,
+Missing template users/show....
 ```
 
 This is easy to remedy. We just need to create a show view. You should already know how to do this, if not then just add a new file to ```views/users``` called ```show.html.erb```. In this file add something like:
@@ -308,17 +308,64 @@ But before we do that you should take a break if you haven't yet. I recommend po
 
 Enough sillyness. On to the next exercise!
 
-<!-- Create signup form on user#new page -->
-
 <h2 id="links">Links</h2>
 For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#links" target="_blank">Links overview</a>
 
-<!-- Replace anchor tag in navbar with link_to -->
+In this exercise we'll be creating navigation that will show on each page. This will give us a chance to use the Rail's ```link_to``` helper for all our links. Before we get started I want to forewarn you, this navigation is going to be pretty wild. It's going to have a signup link and a home link. I know, I know. I'm pretty extreme. :P
+
+Before we get to building our amazing navbar we'll need to setup our landing page. If you remember correctly our currently landing page is the default Rails landing page. This file is located in the public folder under ```index.html```. Let's delete this file as we'll not be needing it any longer. 
+
+Now that we've deleted the default landing page, let's create our own. First we'll update ```routes.rb``` with:
+
+```ruby
+PracticeApp::Application.routes.draw do
+
+  root to: "static_pages#index" # this is the line we are addding
+  resources :users
+  
+end
+```
+
+Next let's create a ```static_pages``` folder in ```views```. Once we've created this folder we'll add the ```index.html.erb``` page we see referenced in the routes file above. Next add the following code to the ```index.html.erb``` file:
+
+```erb
+<h1>Welcome to the Sample app!</h1>
+<p>This is being used to help teach Dev Bootcamp students</p>
+```
+
+Before our new landing page will work we'll have to create a controller for it. Let's create a new controller called ```static_pages_controller.rb``` in the ```controllers``` folder and add the following code:
+
+```
+class StaticPagesController < ApplicationController
+
+  def index
+  end
+
+end
+```
+
+OK cool, now navigate to ```localhost:3000```. You should see our brand new landing page. Next let's create that amazing navbar I was talking about earlier. To do so we'll add the following to ```app/views/layouts/application.html.erb```:
+
+```erb
+<body>
+  <div class="navbar">
+    <%= link_to "Home", :root %>
+    <%= link_to "Sign Up!", :new_user %>
+  </div>
+  
+<%= yield %>
+
+</body>
+```
+
+Note the use of the Rail's ```link_to``` to create our home and signup links. To test our work out refresh the page at ```localhost:3000``. Links for home and signup should be found at the top of the page. Let's click them a few times to ensure they function as expected. 
+
+All good? Sweet! That's all there is to the ```link_to``` tag. Much nicer than writing out anchor tags all day, you agree?
+OK, let's move on to the next exercise where we'll learn about partials. We'll do this by refactoring our navbar out of the main layout file and into a partial. Ready?
 
 <h2 id="partials">Partials</h2>
 For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#partials" target="_blank">Partials overview</a>
 
-<!-- create a partial for the nav bar, use anchor tags -->
 
 <h2 id="ajax">AJAX</h2>
 For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#ajax" target="_blank">AJAX overview</a>
