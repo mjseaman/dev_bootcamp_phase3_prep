@@ -212,19 +212,101 @@ Before we test this page in the browser let's add a little text. Something like 
 
 Now navigate to ```localhost:3000/users/new```. Did it work? Of course it did!! Woohoo! Party time! We now have "Models and Controllers and Views, OH MY!!!"
 
-You are officially a Rails rockstar. You can retire now....
+You are officially a Rails rockstar. You can now retire....
 
 OK, now that you've retired, let's do some more work. :P  First things first, we can't actually sign any users up. So let's jump to the next section where we'll add a signup form using the Rail's helper ```form_for```.
 
 <!-- create a static pages index page, a signup page, and a show page -->
 
-<h2 id="partials">Partials</h2>
-For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#partials" target="_blank">Partials overview</a>
-
-<!-- create a partial for the nav bar, use anchor tags -->
-
 <h2 id="forms">Forms</h2>
 For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#forms" target="_blank">Forms overview</a>
+
+Alrighty then. Continuing on. We left off with this very stylish and sleek ```users/new``` page which lacked a form for actually signing up. Our next task is to use ```form_for``` to create the form. To do so let's add the following to ```new.html.erb```:
+
+```erb
+<h1>Sign up</h1>
+<%= form_for @user do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+  <%= f.label :email %>
+  <%= f.email_field :email %>
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+  <%= f.submit "Signup!!" %>
+<% end %>
+```
+
+Now navigate to ```localhost:3000/users/new```. You should receive this error:
+```
+undefined method `model_name' for NilClass:Class
+```
+
+Why's this? Well, we didn't actually pass in a user to the form_for. So let's go to our controller and add the following:
+```ruby
+def new
+  @user = User.new
+end
+```
+
+Now refresh the page. Violá! Form magic!
+
+So we now have a form for signing up. Let's test this bugger out and make sure it works (spoiler alert - it doesn't work). 
+
+You got an error, right? And it looks like:
+```
+The action 'create' could not be found for UsersController
+```
+
+We've seen a similar error, remember? It was in the controller's exercise. Right after we created our routes we ran into the same problem with the ```new``` action. To get this to work we will do what we did then, add a ```create``` action to ```users_controller.rb```:
+```ruby
+def new
+  @user = User.new
+end
+
+def create
+end
+```
+
+Refresh the page where we had the error. A new error should occur:
+```
+Missing template users/create...
+```
+
+So we have no template ```users/create```. That's actually correct. We don't need a template as create is a post. So what we'll do here is actually create the user in our ```create``` method and then redirect to a profile page (```users/:id```) after the user has been saved.
+
+To do this we add the following to ```users_controller.rb```:
+
+```ruby
+def create
+  @user = User.new(params[:user])
+  redirect_to @user if @user.save
+end
+
+def show
+  @user = User.find(params[:id])
+end
+```
+
+NOTE: we are not handling errors in this tutorial. To do so you'd add an else statement in the create method. 
+
+Now try to sign up. You'll get an error about our show page not existing:
+```
+Missing template users/show,
+```
+
+This is easy to remedy. We just need to create a show view. You should already know how to do this, if not then just add a new file to ```views/users``` called ```show.html.erb```. In this file add something like:
+
+```erb
+<h1>Welcome <%= @user.username %> </h1>
+```
+
+Now refresh the browser (or signup again). Everything should work! 
+
+Sweet! That was fun. We now have an app where a user can come and signup... Well, kinda. A user can't actually come to the home page and signup. So that's what we'll do next. We'll create a landing page with a link to signup. 
+
+But before we do that you should take a break if you haven't yet. I recommend possibly drinking some water (yes water... not coffee) or maybe even stretching a little... Surely sitting in that chair can't be good for your posture. What's this? You're at a standing desk? In that case have yourself a seat and relax like the rest of us! 
+
+Enough sillyness. On to the next exercise!
 
 <!-- Create signup form on user#new page -->
 
@@ -232,6 +314,11 @@ For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcam
 For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#links" target="_blank">Links overview</a>
 
 <!-- Replace anchor tag in navbar with link_to -->
+
+<h2 id="partials">Partials</h2>
+For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#partials" target="_blank">Partials overview</a>
+
+<!-- create a partial for the nav bar, use anchor tags -->
 
 <h2 id="ajax">AJAX</h2>
 For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#ajax" target="_blank">AJAX overview</a>
