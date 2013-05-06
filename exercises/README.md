@@ -358,7 +358,7 @@ OK cool, now navigate to ```localhost:3000```. You should see our brand new land
 </body>
 ```
 
-Note the use of the Rail's ```link_to``` to create our home and signup links. To test our work out refresh the page at ```localhost:3000``. Links for home and signup should be found at the top of the page. Let's click them a few times to ensure they function as expected. 
+Note the use of the Rail's ```link_to``` to create our home and signup links. To test our work out refresh the page at ```localhost:3000```. Links for home and signup should be found at the top of the page. Let's click them a few times to ensure they function as expected. 
 
 All good? Sweet! That's all there is to the ```link_to``` tag. Much nicer than writing out anchor tags all day, you agree?
 OK, let's move on to the next exercise where we'll learn about partials. We'll do this by refactoring our navbar out of the main layout file and into a partial. Ready?
@@ -366,8 +366,36 @@ OK, let's move on to the next exercise where we'll learn about partials. We'll d
 <h2 id="partials">Partials</h2>
 For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#partials" target="_blank">Partials overview</a>
 
+OK, last exercise here. Let's create a partial. First we'll create a new file called ```_navbar.html.erb``` in  ```app/views/layouts```. 
 
-<h2 id="ajax">AJAX</h2>
-For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#ajax" target="_blank">AJAX overview</a>
+Next we'll cut out our navbar html from the ```application.html.erb``` and add it into our new partial. The code for ```_navbar.html.erb``` should look like so:
 
-<!-- Ajaxify the errors for the signup page? -->
+```erb
+<div class="navbar">
+  <%= link_to "Home", :root %>
+  <%= link_to "Sign Up!", :new_user %>
+</div>
+```
+
+OK, so far so good. Last thing is to call the partial from the main layout file. We'll do this with render like so:
+
+```erb
+<body>
+  <%= render "layouts/navbar" %>
+
+<%= yield %>
+.
+.
+.
+```
+
+Note here you do not include the underscore in the render statement. Now refresh the browser and you should still see our links working as before. 
+
+Works? Sweet!
+
+<h2>That's all folks!!! </h2>
+
+Holy hell we're finally done! I hope you enjoyed doing these exercises as much as I enjoyed making them for you. If you're interested in learning more you can always <a href="http://adventuresincoding.tumblr.com" target="_blank">check out my blog</a> where you'll find more tutorials and tips. And if you'd like to connect feel free to <a href="http://facebook.com/rguerrettaz" target="_blank">add me as a friend</a> on Facebook. That's it. :)
+
+GOOD LUCK!
+
