@@ -25,7 +25,7 @@ That was easy. Now let's write our first test!
 <h2 id="rspec--testing">Rspec & Testing</h2>
 For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#rspec--testing" target="_blank">Rspec & Testing overview</a>
 
-OK, our first tests... I know what you're thinking, "Shit! Uggghhh! Fudge!! Tests... grrrr". Yes, indeed. But tests are our friends. So instead of cursing tests we will welcome them by getting our test environment set up like a <a href="http://ionenewsone.files.wordpress.com/2011/09/al-capone.jpg" target="_blank">G</a>.
+OK, our first tests... I know what you're thinking, "Shit! Uggghhh! Fudge!! Tests... grrrr". Yes, indeed. But tests are our friends. So instead of cursing tests we will welcome them by getting our test environment set up like a <a href="http://ratchetreview.files.wordpress.com/2013/02/481.jpg?w=490" target="_blank">G</a>.
 
 First things first, add this to your Gemfile (if you have yet to create a new rails project follow the directions in <a href="#rails-setup">setup</a> above).
 ```ruby
