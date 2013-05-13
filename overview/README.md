@@ -38,9 +38,9 @@ No really, if you don't understand, don't freak out, at least you've been introd
 Enough mumbo jumbo, let's get to learning!
 
 <h2 id="rspec--testing">Rspec & Testing</h2>
-Don't stress too much on Rspec and Testing right now. There are (or were) 3 great challenges in week 1 that get you up to speed. Also realize tests can be a major road block to your learning in Rails. I would recommend you get comfortable with rails before you worry about TDD.
+Don't stress too much on Rspec and Testing right now. There are (or were) 3 great challenges in week 1 that get you up to speed (I am told as of 5/12/2013 DBC is no longer covering TDD). Also realize tests can be a major road block to your learning in Rails. I would recommend you get comfortable with rails before you worry about TDD.
 
-That said, here's a list of gems I used to run my testing in rails. We'll call it the TDD toolbelt
+That said, here's a list of gems I use to run my testing in rails. We'll call it the TDD toolbelt
 ###TDD toolbelt
 <a href="https://github.com/thoughtbot/factory_girl_rails" target="_blank">Factory Girl</a> - allows you to create objects for your tests, hence the name "Factory" girl. 
 
