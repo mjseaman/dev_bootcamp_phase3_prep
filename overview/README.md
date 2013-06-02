@@ -152,7 +152,7 @@ end
 ```
 In rails our controller looks like this:
 ```ruby
-class UsersController < ActiveRecord::Base
+class UsersController < ActionController::Base
 
   def index
     @user = User.new
