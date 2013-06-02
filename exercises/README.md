@@ -313,7 +313,7 @@ For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcam
 
 In this exercise we'll be creating navigation that will show on each page. This will give us a chance to use the Rail's ```link_to``` helper for all our links. Before we get started I want to forewarn you, this navigation is going to be pretty wild. It's going to have a signup link and a home link. I know, I know. I'm pretty extreme. :P
 
-Before we get to building our amazing navbar we'll need to setup our landing page. If you remember correctly our currently landing page is the default Rails landing page. This file is located in the public folder under ```index.html```. Let's delete this file as we'll not be needing it any longer. 
+Before we get to building our amazing navbar we'll need to setup our landing page. If you remember correctly our current landing page is the default Rails landing page. This file is located in the public folder under ```index.html```. Let's delete this file as we'll not be needing it any longer. 
 
 Now that we've deleted the default landing page, let's create our own. First we'll update ```routes.rb``` with:
 
