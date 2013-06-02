@@ -201,7 +201,7 @@ For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcam
 
 Picking up where we left off in the controllers exercise we are going to create a signup page for the url ```localhost:3000/users/new```. To do this we first need to add a ```users``` folder to ```app/views```. The path for this folder should look like ```app/views/users```. 
 
-Great. Now let's create a view for the signup page. To do so add a file called ```new.html.erb``` to ```app/views/users```. NOTE: For those making the shift from Sinatra to Rails you will note here that our html files are prefixed with ```.html.erb```. As you remember, in Sinatra files were simply prefixed with ```.erb```. This is a convention in rails. Both render the same outcome.
+Great. Now let's create a view for the signup page. To do so add a file called ```new.html.erb``` to ```app/views/users```. NOTE: For those making the shift from Sinatra to Rails you will note here that our html files are suffixed with ```.html.erb```. As you remember, in Sinatra files were simply suffixed with ```.erb```. This is a convention in rails. Both render the same outcome.
 
 Before we test this page in the browser let's add a little text. Something like this should work fine:
 
