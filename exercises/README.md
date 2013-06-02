@@ -167,7 +167,7 @@ edit_user GET    /users/:id/edit(.:format) users#edit
 
 Now navigate back to our users/new page. ``` localhost:3000/users/new```. This time we should be receiving a different error:
 ```
-The action 'new' could not be found for UsersController
+uninitialized constant UsersController
 ```
 
 OK, cool. So we have our routes setup but our controller has no action 'new'. It's time we setup our controller. To do so we'll navigate to our ```app/controllers``` folder and create a new file called "users_controller.rb". Add the below to the file:
