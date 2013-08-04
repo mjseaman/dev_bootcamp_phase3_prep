@@ -116,12 +116,6 @@ Next we must prepare our test database with:
 ```sh
 $ rake db:test:prepare
 ```
-If we run our tests again we find they are still failing. So how do we fix this? Well one problem we are having is with <a href="http://guides.rubyonrails.org/security.html#mass-assignment" target="_blank">mass assignment</a>. We cannot mass assign attributes to a model without declaring them in our attr_accessible statement. So let's declare our attributes in the model. To do so navigate to ```app/models/user.rb``` and open the file. From here let's add our attribute accessible's like so:
-```ruby
-class User < ActiveRecord::Base
-  attr_accessible :username, :email, :password
-end
-```
 
 Now run our tests and.... The shit works. F* YEAH!!!!!!!! Passing tests and a user model! Done and done. 
 
@@ -194,7 +188,7 @@ Now navigate to ```localhost:3000/users/new``` one more time. The new error we n
 Missing template users/new, application/new....
 ```
 
-OK, cool! We have a controller setup, now we need a tempalte (or view) for our ```users/new``` page. Let's get it done in the next section.
+OK, cool! We have a controller setup, now we need a template (or view) for our ```users/new``` page. Let's get it done in the next section.
 
 <h2 id="views">Views</h2>
 For an overview checkout the <a href="https://github.com/rguerrettaz/dev_bootcamp_phase3_prep/tree/master/overview#views" target="_blank">Views overview</a>
@@ -288,6 +282,40 @@ end
 ```
 
 NOTE: we are not handling errors in this tutorial. To do so you'd add an else statement in the create method. 
+
+If you receive an error like this: 
+
+```
+ActiveModel::ForbiddenAttributesError
+```
+Rails 4 requires that necessary parameters be marked as required.  you can add this to your model to require the ```:user``` parameter and permit its keys. Also, update the ```create``` method to accept user_params instead of the parameters themselves.
+
+```ruby
+class UsersController < ApplicationController
+
+  def new
+    @user = User.new
+  end
+
+  def create
+    @user = User.new(user_params)
+    redirect_to @user if @user.save
+  end
+
+  def show
+    @user = User.find(params[:id])
+  end
+
+  private
+
+  def user_params
+    params.require(:user).permit(:username, :email, :password)
+  end
+
+end
+```
+
+
 
 Now try to sign up. You'll get an error about our show page not existing:
 ```
